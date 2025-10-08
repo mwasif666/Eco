@@ -24,7 +24,7 @@ const project_data = [
     img_1: port_1,
     img_2: port_2,
     icon: icon1,
-    meta: "Afforestation, reforestation, and land restoration to capture CO2. Carbon sequestration, biodiversity, ecosystem restoration, community empowerment",
+    meta: "Afforestation, reforestation, and land restoration to capture CO2. Carbon sequestration, biodiversity, ecosystem restoration, community empowerment.",
     title: "Green Projects",
   },
   {
