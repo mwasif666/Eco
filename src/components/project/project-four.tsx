@@ -3,18 +3,18 @@ import Image from "next/image";
 
 import { ProjectShape, RightArrow } from "../svg";
 // images
-import port_1 from "@/assets/img/home-02/portfolio/1A.png";
-import port_2 from "@/assets/img/home-02/portfolio/1B.png";
-import port_3 from "@/assets/img/home-02/portfolio/2A.png";
-import port_4 from "@/assets/img/home-02/portfolio/2B.png";
-import port_5 from "@/assets/img/home-02/portfolio/3A.png";
-import port_6 from "@/assets/img/home-02/portfolio/3B.png";
-import port_7 from "@/assets/img/home-02/portfolio/4A.png";
-import port_8 from "@/assets/img/home-02/portfolio/4B.png";
-import icon1 from "@/assets/img/home-02/portfolio/1.svg";
-import icon2 from "@/assets/img/home-02/portfolio/2.svg";
-import icon3 from "@/assets/img/home-02/portfolio/3.svg";
-import icon4 from "@/assets/img/home-02/portfolio/4.svg";
+import port_1 from "@/assets/img/home-02/Portfolio/1A.png";
+import port_2 from "@/assets/img/home-02/Portfolio/1B.png";
+import port_3 from "@/assets/img/home-02/Portfolio/2A.png";
+import port_4 from "@/assets/img/home-02/Portfolio/2B.png";
+import port_5 from "@/assets/img/home-02/Portfolio/3A.png";
+import port_6 from "@/assets/img/home-02/Portfolio/3B.png";
+import port_7 from "@/assets/img/home-02/Portfolio/4A.png";
+import port_8 from "@/assets/img/home-02/Portfolio/4B.png";
+import icon1 from "@/assets/img/home-02/Portfolio/1.svg";
+import icon2 from "@/assets/img/home-02/Portfolio/2.svg";
+import icon3 from "@/assets/img/home-02/Portfolio/3.svg";
+import icon4 from "@/assets/img/home-02/Portfolio/4.svg";
 import Link from "next/link";
 
 // portfolio data
