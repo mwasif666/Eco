@@ -3,13 +3,11 @@ import { Metadata } from "next";
 import TeamMain from "@/pages/team/team";
 
 export const metadata: Metadata = {
-  title: "Liko - Team page",
+  title: "Econetix - Team page",
 };
 
 const TeamPage = () => {
-  return (
-    <TeamMain/>
-  );
+  return <TeamMain />;
 };
 
 export default TeamPage;

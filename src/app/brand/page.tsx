@@ -3,13 +3,11 @@ import { Metadata } from "next";
 import BrandMain from "@/pages/brand/brand-main";
 
 export const metadata: Metadata = {
-  title: "Liko - Brand page",
+  title: "Econetix - Brand page",
 };
 
 const BrandPage = () => {
-  return (
-    <BrandMain/>
-  );
+  return <BrandMain />;
 };
 
 export default BrandPage;

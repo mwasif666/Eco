@@ -3,13 +3,11 @@ import { Metadata } from "next";
 import FaqMain from "@/pages/faq/faq-main";
 
 export const metadata: Metadata = {
-  title: "Liko - Faq page",
+  title: "Econetix - Faq page",
 };
 
 const FaqPage = () => {
-  return (
-    <FaqMain/>
-  );
+  return <FaqMain />;
 };
 
 export default FaqPage;

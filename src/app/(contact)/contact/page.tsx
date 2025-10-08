@@ -3,13 +3,11 @@ import { Metadata } from "next";
 import ContactMain from "@/pages/contact/contact";
 
 export const metadata: Metadata = {
-  title: "Liko - Contact page",
+  title: "Econetix - Contact page",
 };
 
 const ContactPage = () => {
-  return (
-    <ContactMain/>
-  );
+  return <ContactMain />;
 };
 
 export default ContactPage;

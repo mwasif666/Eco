@@ -2,15 +2,12 @@ import React from "react";
 import { Metadata } from "next";
 import PortfolioDetailsVideoMain from "@/pages/portfolio/details/portfolio-details-video-main";
 
-
 export const metadata: Metadata = {
-  title: "Liko - Portfolio Details video page",
+  title: "Econetix - Portfolio Details video page",
 };
 
 const PortfolioDetailsVideoPage = () => {
-  return (
-    <PortfolioDetailsVideoMain/>
-  );
+  return <PortfolioDetailsVideoMain />;
 };
 
 export default PortfolioDetailsVideoPage;

@@ -7,7 +7,7 @@ import hero_bg from "@/assets/img/Circle.svg";
 
 const HeroBannerTwo = () => {
   return (
-    <div className="tp-hero-2-area tp-hero-2-pt">
+    <div className="tp-hero-2-area">
       <div className="container">
         <div className="row">
           <div className="col-xl-12">

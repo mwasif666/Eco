@@ -4,10 +4,14 @@ import product_data from "@/data/product-data";
 import ShopDetailsMain from "@/pages/shop/shop-details-main";
 
 export const metadata: Metadata = {
-  title: "Liko - Shop Details page",
+  title: "Econetix - Shop Details page",
 };
 
-export default function ShopDetailsPage({params}:{params:{id:string}}) {
+export default function ShopDetailsPage({
+  params,
+}: {
+  params: { id: string };
+}) {
   const product = [...product_data].find((p) => p.id === Number(params.id));
   return product ? (
     <ShopDetailsMain product={product} />

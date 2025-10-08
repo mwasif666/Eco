@@ -3,13 +3,11 @@ import { Metadata } from "next";
 import BlogListMain from "@/pages/blog/blog-list";
 
 export const metadata: Metadata = {
-  title: "Liko - Blog List page",
+  title: "Econetix - Blog List page",
 };
 
 const BlogListPage = () => {
-  return (
-    <BlogListMain/>
-  );
+  return <BlogListMain />;
 };
 
 export default BlogListPage;

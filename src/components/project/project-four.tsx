@@ -3,14 +3,18 @@ import Image from "next/image";
 
 import { ProjectShape, RightArrow } from "../svg";
 // images
-import port_1 from "@/assets/img/home-03/portfolio/port-1.jpg";
-import port_2 from "@/assets/img/home-03/portfolio/port-2.jpg";
-import port_3 from "@/assets/img/home-03/portfolio/port-3.jpg";
-import port_4 from "@/assets/img/home-03/portfolio/port-4.jpg";
-import port_5 from "@/assets/img/home-03/portfolio/port-5.jpg";
-import port_6 from "@/assets/img/home-03/portfolio/port-6.jpg";
-import port_7 from "@/assets/img/home-03/portfolio/port-7.jpg";
-import port_8 from "@/assets/img/home-03/portfolio/port-8.jpg";
+import port_1 from "@/assets/img/home-02/portfolio/1A.png";
+import port_2 from "@/assets/img/home-02/portfolio/1B.png";
+import port_3 from "@/assets/img/home-02/portfolio/2A.png";
+import port_4 from "@/assets/img/home-02/portfolio/2B.png";
+import port_5 from "@/assets/img/home-02/portfolio/3A.png";
+import port_6 from "@/assets/img/home-02/portfolio/3B.png";
+import port_7 from "@/assets/img/home-02/portfolio/4A.png";
+import port_8 from "@/assets/img/home-02/portfolio/4B.png";
+import icon1 from "@/assets/img/home-02/portfolio/1.svg";
+import icon2 from "@/assets/img/home-02/portfolio/2.svg";
+import icon3 from "@/assets/img/home-02/portfolio/3.svg";
+import icon4 from "@/assets/img/home-02/portfolio/4.svg";
 import Link from "next/link";
 
 // portfolio data
@@ -19,29 +23,33 @@ const project_data = [
     id: 1,
     img_1: port_1,
     img_2: port_2,
-    meta: "DEC 2024 . Creative",
-    title: "Pellente dapibus",
+    icon: icon1,
+    meta: "Afforestation, reforestation, and land restoration to capture CO2. Carbon sequestration, biodiversity, ecosystem restoration, community empowerment",
+    title: "Green Projects",
   },
   {
     id: 2,
     img_1: port_3,
     img_2: port_4,
-    meta: "NOV 2024 . Creative",
-    title: "Chania tourism",
+    icon: icon2,
+    meta: "Renewable energy and distributed clean energy systems Emissions avoidance, energy access, local economic growth",
+    title: "Yellow Projects",
   },
   {
     id: 3,
     img_1: port_5,
     img_2: port_6,
-    meta: "OCT 2024 . Creative",
-    title: "Fashion sentence",
+    icon: icon3,
+    meta: "Mangrove and coastal ecosystem projects focused on blue carbon Shoreline protection, carbon capture in marine environments, sustainable fisheries",
+    title: "Blue Projects",
   },
   {
     id: 4,
     img_1: port_7,
     img_2: port_8,
-    meta: "SEP 2024 . Creative",
-    title: "Fashion sentence",
+    icon: icon4,
+    meta: "Advisory services that enable effective climate action and high-integrity carbon strategies. Carbon accounting, MRV (monitoring, reporting, verification), ESG alignment, capacity building",
+    title: "Consultancy Projects",
   },
 ];
 
@@ -51,7 +59,11 @@ type IProps = {
 };
 export default function ProjectFour({ style_2 = false }: IProps) {
   return (
-    <div className={`tp-project-3-area ${style_2 ? "pt-60 pw-project-style" : "pt-130 black-bg"}`}>
+    <div
+      className={`tp-project-3-area ${
+        style_2 ? "pt-60 pw-project-style" : "pt-130 black-bg"
+      }`}
+    >
       <div className="container container-1720">
         {!style_2 && (
           <div className="row justify-content-center">
@@ -92,19 +104,39 @@ export default function ProjectFour({ style_2 = false }: IProps) {
                   </div>
                   <div className="col-xl-4 col-lg-4 col-md-12 order-1 order-lg-0">
                     <div className="tp-project-3-content text-center">
-                      <span className="tp-project-3-meta">{item.meta} </span>
+                      <Image
+                        src={item.icon}
+                        alt="port-img"
+                        style={{ height: "auto" }}
+                      />
                       <h4 className="tp-project-3-title-sm">
                         <Link href="/portfolio-details-1">{item.title}</Link>
                       </h4>
-                      <Link
-                        className="tp-btn-project-sm"
-                        href="/portfolio-details-1"
+                      <div className="tp-project-3-border color-1 text-center">
+                        <span></span>
+                      </div>
+                      <span
+                        className=""
+                        style={{
+                          fontSize: "16px",
+                          width: "70%",
+                        }}
                       >
-                        See Project
-                      </Link>
-                    </div>
-                    <div className="tp-project-3-border color-1 text-center">
-                      <span></span>
+                        {item.meta}{" "}
+                      </span>
+                      <p>
+                        <Link
+                          className="tp-btn-project-sm"
+                          href="/portfolio-details-1"
+                          style={{
+                            marginTop: "20px",
+                            backgroundColor: "#00db69",
+                            color: "white",
+                          }}
+                        >
+                          See Project
+                        </Link>
+                      </p>
                     </div>
                   </div>
                   <div className="col-xl-4 col-lg-4 col-md-6 order-0 order-lg-0">

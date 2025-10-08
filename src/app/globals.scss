@@ -1,4 +1,38 @@
 @import "~bootstrap/scss/bootstrap";
-@import 'node_modules/react-modal-video/scss/modal-video.scss';
-@import "swiper/css/bundle"; 
-@import '../../public/assets/scss/main.scss';
+@import "node_modules/react-modal-video/scss/modal-video.scss";
+@import "swiper/css/bundle";
+@import "../../public/assets/scss/main.scss";
+/* Hide the default pointer */
+/* Hide default pointer */
+html,
+body,
+* {
+  cursor: none !important;
+}
+
+/* Cursor wrapper */
+.custom-cursor {
+  position: fixed;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+}
+
+/* Cursor image */
+.cursor-img {
+  width: 40px;
+  height: auto;
+  border-radius: 50%;
+  transition: transform 0.1s linear;
+  animation: spinCursor 6s linear infinite;
+}
+
+/* Continuous circular spin */
+@keyframes spinCursor {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

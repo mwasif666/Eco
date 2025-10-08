@@ -3,13 +3,11 @@ import { Metadata } from "next";
 import PortfolioWrapperMain from "@/pages/portfolio/portfolio-wrapper-main";
 
 export const metadata: Metadata = {
-  title: "Liko - Portfolio Wrapper page",
+  title: "Econetix - Portfolio Wrapper page",
 };
 
 const PortfolioWrapperPage = () => {
-  return (
-    <PortfolioWrapperMain/>
-  );
+  return <PortfolioWrapperMain />;
 };
 
 export default PortfolioWrapperPage;

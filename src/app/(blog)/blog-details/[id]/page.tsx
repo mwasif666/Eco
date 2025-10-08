@@ -3,10 +3,14 @@ import { blog_data } from "@/data/blog-data";
 import BlogDetailsMain from "@/pages/blog/blog-details";
 
 export const metadata: Metadata = {
-  title: "Liko - Blog Details page",
+  title: "Econetix - Blog Details page",
 };
 
-export default function BlogDetailsPage({params}:{params:{id:string}}) {
+export default function BlogDetailsPage({
+  params,
+}: {
+  params: { id: string };
+}) {
   const blog = [...blog_data].find((blog) => blog.id === Number(params.id));
   return blog ? (
     <BlogDetailsMain blog={blog} />

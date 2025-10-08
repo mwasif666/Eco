@@ -3,13 +3,11 @@ import { Metadata } from "next";
 import WishlistMain from "@/pages/wishlist/wishlist-main";
 
 export const metadata: Metadata = {
-  title: "Liko - Wishlist page",
+  title: "Econetix - Wishlist page",
 };
 
 const WishlistPage = () => {
-  return (
-    <WishlistMain/>
-  );
+  return <WishlistMain />;
 };
 
 export default WishlistPage;

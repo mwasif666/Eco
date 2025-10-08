@@ -1,0 +1,21 @@
+/* Hide the default pointer */
+html,
+body,
+* {
+  cursor: none !important;
+}
+
+/* Custom cursor image */
+.custom-cursor {
+  position: fixed;
+  pointer-events: none; /* allows clicking through */
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  transition: transform 0.05s ease-out;
+}
+
+.custom-cursor img {
+  width: 80px;
+  height: auto;
+  border-radius: 10px;
+}

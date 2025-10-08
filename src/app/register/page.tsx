@@ -3,13 +3,11 @@ import { Metadata } from "next";
 import RegisterMain from "@/pages/register/register-main";
 
 export const metadata: Metadata = {
-  title: "Liko - Register page",
+  title: "Econetix - Register page",
 };
 
 const RegisterPage = () => {
-  return (
-    <RegisterMain/>
-  );
+  return <RegisterMain />;
 };
 
 export default RegisterPage;

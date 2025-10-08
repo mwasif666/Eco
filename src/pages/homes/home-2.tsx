@@ -31,6 +31,7 @@ import { instagramAnim } from "@/utils/instagram-anim";
 import { hoverBtn } from "@/utils/hover-btn";
 import HeaderOne from "@/layouts/headers/header-one";
 import BrandOne from "@/components/brand/brand-one";
+import PortfolioWrapperMain from "../portfolio/portfolio-wrapper-main";
 
 const HomeTwoMain = () => {
   useScrollSmooth();
@@ -90,6 +91,9 @@ const HomeTwoMain = () => {
             <ProjectTwo />
             {/* project area */}
             <BrandOne />
+
+            <PortfolioWrapperMain />
+
             {/* award area */}
             {/* <AwardTwo /> */}
             {/* award area */}

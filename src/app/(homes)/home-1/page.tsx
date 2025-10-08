@@ -3,14 +3,11 @@ import { Metadata } from "next";
 import HomeMain from "@/pages/homes/home-1";
 
 export const metadata: Metadata = {
-  title: "Liko - Home Main",
+  title: "Econetix - Home Main",
 };
 
-
 const Home = () => {
-  return (
-    <HomeMain/>
-  );
+  return <HomeMain />;
 };
 
 export default Home;

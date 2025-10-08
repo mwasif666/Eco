@@ -13,7 +13,7 @@ import ProjectFour from "@/components/project/project-four";
 import BigText from "@/components/big-text";
 import FooterTwo from "@/layouts/footers/footer-two";
 // animation
-import { charAnimation,titleAnimation } from "@/utils/title-animation";
+import { charAnimation, titleAnimation } from "@/utils/title-animation";
 import { projectThreeAnimation } from "@/utils/project-anim";
 
 const PortfolioWrapperMain = () => {
@@ -43,16 +43,17 @@ const PortfolioWrapperMain = () => {
                 <div className="row">
                   <div className="col-xl-12">
                     <div className="tm-hero-content">
-                      <span className="tm-hero-subtitle">Liko Studio</span>
                       <h4 className="tm-hero-title tp-char-animation">
-                        Our latest & great projects
+                        From Vision To Impact, Our Projects
                       </h4>
                     </div>
                     <div className="tm-hero-text">
                       <p className="tp_title_anim">
-                        We’re a diverse team that works as fancies attention to
-                        details, enjoys beers on Friday nights and aspires to
-                        design the dent in the universe.
+                        We strategically Implement our carbon projects in
+                        developing regions, partnering with local communities
+                        and governments to maximize both environmental and
+                        social value. Our focus currently is on four primary
+                        types of projects.
                       </p>
                     </div>
                   </div>
@@ -62,17 +63,9 @@ const PortfolioWrapperMain = () => {
             {/* portfolio hero */}
 
             {/* portfolio area */}
-            <ProjectFour style_2={true}/>
+            <ProjectFour style_2={true} />
             {/* portfolio area */}
-
-            {/* big text */}
-            <BigText />
-            {/* big text */}
           </main>
-
-          {/* footer area */}
-          <FooterTwo topCls="" />
-          {/* footer area */}
         </div>
       </div>
     </Wrapper>
