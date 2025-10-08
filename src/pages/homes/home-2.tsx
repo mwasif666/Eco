@@ -108,7 +108,7 @@ const HomeTwoMain = () => {
           </main>
 
           {/* footer area */}
-          <FooterTwo />
+          {/* <FooterTwo /> */}
           {/* footer area */}
         </div>
       </div>
